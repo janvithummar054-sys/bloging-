@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Blog - MyBlog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>MyBlog</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="create-blog.html">Create Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="create-section">
+
+    <h2>Create Your Blog</h2>
+
+    <form id="blogForm">
+
+        <label>Blog Title</label>
+        <input
+            type="text"
+            id="blogTitle"
+            placeholder="Enter blog title"
+            required
+        >
+
+        <label>Author Name</label>
+        <input
+            type="text"
+            id="authorName"
+            placeholder="Enter your name"
+            required
+        >
+
+        <label>Blog Image</label>
+        <input
+            type="file"
+            id="blogImage"
+            accept="image/*"
+        >
+
+        <label>Blog Content</label>
+        <textarea
+            id="blogContent"
+            placeholder="Write your blog here..."
+            required
+        ></textarea>
+
+        <button type="submit">Publish Blog</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 MyBlog | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
